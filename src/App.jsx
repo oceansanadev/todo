@@ -14,7 +14,6 @@ import DeletedListPage from "./features/deleted/pages/DeletedListPage";
 import DeletedDetailsPage from "./features/deleted/pages/DeletedDetailsPage";
 
 function App() {
-  console.log("HELLO APP");
   return (
     <BrowserRouter>
       <Routes>
