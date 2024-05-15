@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Layout from "./core/components/Layout/Layout";
 import HomePage from "./features/home/pages/HomePage";
 import CreateTaskPage from "./features/home/pages/CreateTaskPage";
@@ -15,7 +15,7 @@ import DeletedDetailsPage from "./features/deleted/pages/DeletedDetailsPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
@@ -32,7 +32,7 @@ function App() {
           <Route path="/deletedDetails" element={<DeletedDetailsPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
