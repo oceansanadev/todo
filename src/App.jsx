@@ -19,6 +19,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
+          <Route path="/todo" element={<h1>Hello</h1>} />
           <Route path="/createTask" element={<CreateTaskPage />} />
           <Route path="/todoList" element={<TodoListPage />} />
           <Route path="/todoDetails" element={<TodoDetailsPage />} />
